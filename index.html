@@ -2,56 +2,56 @@
 <html>
 
 <head>
-    <title>AJAX Giphy Btn & Generator</title>
-    <meta charset="utf-8">
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
-        crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-        crossorigin="anonymous">
+<title>AJAX Giphy Btn & Generator</title>
+<meta charset="utf-8">
+<!-- CSS -->
+<link rel="stylesheet" href="./assets/css/main.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+crossorigin="anonymous">
 </head>
 
 <body class="container">
-    <div class="jumbotron" id="header">
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="enter your name" aria-label="enter your name"
-                aria-describedby="basic-addon2" name="user-name" id="user-name">
-            <div class="input-group-append">
-                <button id="submit-form" class="btn btn-info" type="button">Enter</button>
-            </div>
-        </div>
-        <h1><i class="far fa-images"></i> Welcome <span id="user-name-local"></span> to GIPHYs Television Shows!</h1>
-        <h4>Click the buttons to display GIPHYs of your favorite TV <i class="fas fa-tv"></i> shows<br>Click the GIPHYs
-            to pause <i class="far fa-pause-circle"></i> and play <i class="far fa-play-circle"></i><br><i class="fas fa-search"></i>
-            Search
-            to add more buttons</h4>
-    </div>
-    <div class="row">
-        <div class="container">
-            <label for="tvInput">Search for a TV Show</label>
-            <input type="text" id="tvInput" placeholder="tv show">
-            <input id="addShow" type="submit" value="Enter" class="btn btn-info">
-        </div>
-    </div>
-    <div class="row">
-        <div class="btn-group">
-            <button class="btn btn-info" id="show" data-search="Silicon Valley">Silicon Valley <i class="fab fa-pied-piper-pp fa-2x"></i></i></button>
-            <button class="btn btn-info" id="show" data-search="Halt and Catch Fire">Halt and Catch Fire <i class="fas fa-laptop fa-2x"></i></button>
-            <button class="btn btn-info" id="show" data-search="Mr. Robot">Mr. Robot <i class="fas fa-robot fa-2x"></i></button>
-            <button class="btn btn-info" id="show" data-search="Westworld">Westworld <i class="fas fa-horse fa-2x"></i></button>
-            <button class="btn btn-info" id="show" data-search="The Handmaid's Tale">The Handmaid's Tale <i class="far fa-eye fa-2x"></i></button>
-            <!-- <button class="btn btn-info" id="show" data-search="Black Mirror">Black Mirror</button> -->
-            <div id="myButtons"></div>
-        </div>
-    </div>
-    <div class="row">
-        <div id="gifArea"></div>
-    </div>
-    <!-- JS -->
-    <script src="./assets/js/app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<div class="jumbotron" id="header">
+<div class="input-group mb-3">
+<input type="text" class="form-control" placeholder="enter your name" aria-label="enter your name"
+aria-describedby="basic-addon2" name="user-name" id="user-name">
+<div class="input-group-append">
+<button id="submit-form" class="btn btn-info" type="button">Enter</button>
+</div>
+</div>
+<h1><i class="far fa-images"></i> Welcome <span id="user-name-local"></span> to GIPHYs Television Shows!</h1>
+<h4>Click the buttons to display GIPHYs of your favorite TV <i class="fas fa-tv"></i> shows<br>Click the GIPHYs
+to pause <i class="far fa-pause-circle"></i> and play <i class="far fa-play-circle"></i><br><i class="fas fa-search"></i>
+Search
+to add more buttons</h4>
+</div>
+<div class="row">
+<div class="container">
+<label for="tvInput">Search for a TV Show</label>
+<input type="text" id="tvInput" placeholder="tv show">
+<input id="addShow" type="submit" value="Enter" class="btn btn-info">
+</div>
+</div>
+<div class="row">
+<div class="btn-group">
+<button class="btn btn-info" id="show" data-search="Silicon Valley">Silicon Valley&nbsp;<i class="fab fa-pied-piper-pp fa-2x"></i></i></button>
+<button class="btn btn-info" id="show" data-search="Halt and Catch Fire">Halt and Catch Fire&nbsp;<i class="fas fa-laptop fa-2x"></i></button>
+<button class="btn btn-info" id="show" data-search="Mr. Robot">Mr. Robot&nbsp;<i class="fas fa-robot fa-2x"></i></button>
+<button class="btn btn-info" id="show" data-search="Westworld">Westworld&nbsp;<i class="fas fa-horse fa-2x"></i></button>
+<button class="btn btn-info" id="show" data-search="The Handmaid's Tale">The Handmaid's Tale&nbsp;<i class="far fa-eye fa-2x"></i></button>
+<!-- <button class="btn btn-info" id="show" data-search="Black Mirror">Black Mirror</button> -->
+<div id="myButtons"></div>
+</div>
+</div>
+<div class="row">
+<div id="gifArea"></div>
+</div>
+<!-- JS -->
+<script src="./assets/js/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </body>
 
 </html>
