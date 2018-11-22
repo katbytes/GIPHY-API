@@ -1,46 +1,39 @@
-body {
-}
 p {
-margin-top: 10px;
-margin-bottom: 1rem;
-font-size: .7em;
-text-transform: uppercase;
-color: #fbe0d2;
-padding: 100px 10px 0 0;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    font-size: .7em;
+    text-transform: uppercase;
+    color: #fbe0d2;
+    padding: 100px 10px 0 0;
 }
-.container{
-width: 800px;
-background-color: lightsalmon;
+.container {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: lightsalmon;
+    margin-top: 10px;
+}
+.jumbotron {
+    box-shadow: 5px 5px #df7d59;
 }
 .row {
-display: -ms-flexbox;
-display: flex;
--ms-flex-wrap: wrap;
-align-items: center;
-align-content: center;
-margin: 0 auto;
-flex-wrap: wrap;
-text-align: center;
-display: inline;
-/* margin-right: -15px; */
-/* margin-left: 15px; */
+    margin-bottom: 30px;
 }
 #header {
-background-color: lightgoldenrodyellow;
-color: #000;
-text-align: left;
-padding-top: 10px;
-padding-bottom: 15px;
+    background-color: lightgoldenrodyellow;
+    color: #000;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 #topImageL {
-width: 15%;
-float: left;
-margin-left: 20px;
+    width: 15%;
+    float: left;
+    margin-left: 20px;
 }
 #topImageR {
-width: 15%;
-float: right;
-margin-right: 20px;
+    width: 15%;
+    float: right;
+    margin-right: 20px;
 }
 label {
     display: inline-block;
@@ -48,38 +41,45 @@ label {
     font-size: 18px;
 }
 #show {
-margin-right: 5px;
-margin-left: 5px;
-margin-top: 5px;
-margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .form-group {
-margin-left: 10px;
-padding: 20px;
+    margin-left: 10px;
+    padding: 20px;
 }
 #tvInput {
-margin-left: 10px;
-margin-bottom: 30px;
+    margin-left: 10px;
 }
 #tvSearch {
-margin: 0 auto;
-text-align: center;
+    margin: 0 auto;
+    text-align: center;
 }
 #gifArea {
-clear: both;
-display: inline;
-flex-wrap: wrap;
+    clear: both;
+    display: inline;
+    flex-wrap: wrap;
 }
 .tvGiphy {
-margin-top: 20px;
-width: 300px;
-height: 175px;
-border-radius: 10px;
-box-shadow: 5px 5px #df7d59;
+    margin-top: 20px;
+    width: 300px;
+    height: 175px;
+    border-radius: 10px;
+    box-shadow: 5px 5px #df7d59;
 }
 .col-md-4 {
-float: left;
-display: inline-flex;
+    float: left;
+    display: inline-flex;
+}
+.row-search-for {
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+.row-buttons {
+    margin-left: 30px;
+    text-align: center
 }
 /* wip */
 @media screen and (max-width: 600px) {
