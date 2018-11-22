@@ -1,3 +1,5 @@
+var mouseClick = new Audio("assets/audio/mouse-click.mp3");
+
 $(document).ready(function () {
     // Array for searched topics to be added
     var topics = [];
@@ -115,6 +117,8 @@ $(document).ready(function () {
         if (state === "still") {
             $(this).attr("src", $(this).attr("data-animate"));
             $(this).attr("data-state", "animate");
+            // play the cat sound
+            mouseClick.play();
         } else {
             $(this).attr("src", $(this).attr("data-still"));
             $(this).attr("data-state", "still");
