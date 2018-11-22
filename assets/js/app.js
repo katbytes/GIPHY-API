@@ -69,7 +69,6 @@ showImage.attr("data-animate", defaultAnimatedSrc);
 showDiv.append(p);
 showDiv.append(showImage);
 $("#gifArea").prepend(showDiv);
-
 }
 });
 }
@@ -121,14 +120,13 @@ $(this).attr("src", $(this).attr("data-still"));
 $(this).attr("data-state", "still");
 }
 }
-
 });
 
-$("#submit-form").on("click", function(e){
+$("#submit-form").on("click", function (e) {
 e.preventDefault();
 var userName = $("#user-name").val().trim();
 console.log(userName);
-$("#user-name-local").text(userName);   
+$("#user-name-local").text(userName);
 
 // Setting an item in localStorage setItem
 localStorage.setItem("username", userName);

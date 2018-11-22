@@ -1,14 +1,9 @@
-body, #wholeThing {
+body {
+}
+.container{
+width: 800px;
 background-color: lightsalmon;
 }
-/* #btn-group {
-display: block;
-list-style-type: none;
-float: left;
-padding-left: 15px;
-padding-right: 15px;
-box-sizing: border-box;
-} */
 #header {
 background-color: lightgoldenrodyellow;
 color: #000;
@@ -54,6 +49,13 @@ flex-wrap: wrap;
 .tvGiphy {
 padding: 2px;
 width: 80%;
+border-radius: 10px;
+box-shadow: 2px 2px #333333;
 }
+.col-md-4, .btn-group, .row, #show {
+float: left;
+display: inline-flex;
+}
+/* wip */
 @media screen and (max-width: 600px) {
 }
